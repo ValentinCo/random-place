@@ -3,7 +3,7 @@ jQuery(function ($) {
     $(".melange").click(function () { 
     $.ajax({
         //Conversion en json = od6/public/values?alt=json
-        url: "http://spreadsheets.google.com/feeds/list/" + $('.magie').val() + "/od6/public/values?alt=json "
+        url: "https://spreadsheets.google.com/feeds/list/" + $('.magie').val() + "/od6/public/values?alt=json "
 
     }).done(function (data) {
         //Boucle pour afficher les prénom
