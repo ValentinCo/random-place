@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Random</title>
+</head>
+
+<body>
+
+    <h1 class="text-center"><span class="label label-primary">Placement aléatoire</span></h1>
+    <input class="magie" type="text">
+    
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-6 text-center bouton melange"><button type="button" class="btn btn-info">Mélanger</button></div>
+            <div class=" col-sm-6 text-center bouton"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong">
+                Groupes aléatoire
+              </button></div>
+
+        </div>
+    </div>
+    <!-- Les tables on s'on afficher les eleves -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6" id="place0"></div>
+                    <div class="col-sm-6" id="place1"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6" id="place2"></div>
+                    <div class="col-sm-6" id="place3"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6" id="place4"></div>
+                    <div class="col-sm-6" id="place5"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-10 col-sm-2">Formateur<br><img class="image" src="http://lorempixel.com/400/200" alt="Photo rigolote"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6" id="place6"></div>
+                    <div class="col-sm-6" id="place7"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6" id="place8"></div>
+                    <div class="col-sm-6" id="place9"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-6" id="place10"></div>
+                    <div class="col-sm-6" id="place11"></div>
+                </div>
+            </div>
+            <div class="col-sm-4 marge">
+                <div class="row">
+                    <div class="col-sm-6" id="place12"></div>
+                    <div class="col-sm-6" id="place13"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12" id="place14"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Groupes aléatoire</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <h3>GROUPE 1</h3>
+                                <div class="col-sm-1" id="groupe0"></div>
+                                <div class="col-sm-1" id="groupe1"></div>
+                                <div class="col-sm-1" id="groupe2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <h3>GROUPE 2</h3>
+                                <div class="col-sm-1" id="groupe3"></div>
+                                <div class="col-sm-1" id="groupe4"></div>
+                                <div class="col-sm-1" id="groupe5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <h3>GROUPE 3</h3>
+                            <div class="row">
+                                <div class="col-sm-1" id="groupe6"></div>
+                                <div class="col-sm-1" id="groupe7"></div>
+                                <div class="col-sm-1" id="groupe8"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <h3>GROUPE 4</h3>
+                            <div class="row">
+                                <div class="col-sm-1" id="groupe9"></div>
+                                <div class="col-sm-1" id="groupe10"></div>
+                                <div class="col-sm-1" id="groupe11"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <h3>GROUPE 5</h3>
+                            <div class="row">
+                                <div class="col-sm-1" id="groupe12"></div>
+                                <div class="col-sm-1" id="groupe13"></div>
+                                <div class="col-sm-1" id="groupe14"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary melange">Mélanger</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="container">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-1" id="groupe3"></div>
+                <div class="col-sm-1" id="groupe4"></div>
+                <div class="col-sm-1" id="groupe5"></div>
+            </div>
+        </div>
+    </div> -->

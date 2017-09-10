@@ -1,0 +1,31 @@
+body {
+    background-image: url(grunge_wall/grunge_wall.png)
+}
+[class*="col-sm-4"], footer {
+background-image: url(wood_pattern/wood_pattern.png);
+border: 2px solid black;          
+border-radius: 6px;
+line-height: 40px;
+text-align: center;
+margin-bottom: 30px;
+}
+[class*="col-sm-2"], footer {
+    background-image: url(wood_pattern/wood_pattern.png);
+    border: 2px solid black;          
+    border-radius: 6px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.marge {
+    margin-right: 80px;
+}
+.image {
+    height: 78px;
+    width: 80px; 
+    border: 3px solid #9C95E8;
+    border-radius: 5px;
+}
+.bouton {
+    margin-bottom: 15px;
+}
